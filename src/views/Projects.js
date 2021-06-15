@@ -10,18 +10,18 @@ import {
 
 export default function Projects() {
   return (
-    <MDBContainer fluid className='py-5 text-white' style={{backgroundColor: '#191919'}}>
+    <MDBContainer fluid className='py-0 text-white' style={{backgroundColor: '#191919'}}>
 
         <MDBRow className='justify-content-center pb-3'>
             <MDBCol md={6} className='gx-5 mb-2 text-center'>
-                <MDBTypography tag='div' className='display-5 pb-3 mb-3 border-bottom tracking-in-expand' style={{fontFamily: "'Cinzel', serif", letterSpacing: '0.5rem'}}>
+                <MDBTypography tag='div' className='display-6 pb-3 mb-3 border-bottom tracking-in-expand' style={{fontFamily: "'Cinzel', serif", letterSpacing: '0.5rem'}}>
                     Projects
                 </MDBTypography>
             </MDBCol>
         </MDBRow>
 
         <MDBRow className='justify-content-center p-3'>
-            <div class="col-10 col-md-3 col-l-3 col-xl-4 col-xxl-2 mb-4">
+            <div class="col-9 col-sm-6 col-md-4 col-lg-4 col-xxl-2 mb-4">
                 <MDBRipple
                     className='bg-image hover-zoom shadow-5-strong rounded'
                     rippleTag='div'
@@ -32,8 +32,8 @@ export default function Projects() {
             </div>
 
               <div class="col-md-8 col-xxl-7 mb-4">
-                <h2><a href="https://chimstead.shinyapps.io/cubedata/" className='link-primary'>Cube Data Aggregation</a></h2>
-               <MDBTypography className='fs-4 ' style={{fontFamily: ''}}>
+                <h3><a href="https://chimstead.shinyapps.io/cubedata/" className='link-primary'>Cube Data Aggregation</a></h3>
+               <MDBTypography className='fs-5' style={{fontFamily: ''}}>
                    An ongoing project maintained by web developers and a data scientist who tracks and analyzes winning Magic: The Gathering deck lists submitted from online communities.
                     Some of the major features include tracking card prevelance over time, win percentages, deck tracking, and recommended bot picks.
                 </MDBTypography>
@@ -46,7 +46,7 @@ export default function Projects() {
 
 
         <MDBRow className='justify-content-center p-3'>
-            <div class="col-10 col-md-3 col-l-3 col-xl-4 col-xxl-2 mb-4">
+            <div class="col-9 col-sm-6 col-md-4 col-lg-4 col-xxl-2 mb-4">
                 <MDBRipple
                     className='bg-image hover-overlay shadow-5-strong rounded'
                     rippleTag='div'
@@ -58,9 +58,9 @@ export default function Projects() {
               </div>
 
               <div class="col-md-8 col-xxl-7 mb-4">
-                <h2><a href="https://github.com/jasonywang0/The-Grand-Calcutron" className='link-primary'>The Grand Calcutron</a></h2>
+                <h3><a href="https://github.com/jasonywang0/The-Grand-Calcutron" className='link-primary'>The Grand Calcutron</a></h3>
                 
-                <MDBTypography className='fs-4' >
+                <MDBTypography className='fs-5' >
                      An active Discord bot responsible for providing CRUD services and social features for online communities. 
                     Some of the major features include an intuitive leveling and ranking system that can be completely and easily customized,
                     tag or url storage for each user, the ability to run CRUD operations via the Discord client, image generation, and url parsing and calls.
@@ -76,7 +76,7 @@ export default function Projects() {
         </MDBRow>
 
         <MDBRow className='justify-content-center p-3'>
-            <div class="col-10 col-md-3 col-l-3 col-xl-4 col-xxl-2 mb-4">
+            <div class="col-9 col-sm-6 col-md-4 col-lg-4 col-xxl-2 mb-4">
                 <MDBRipple
                     className='bg-image hover-overlay shadow-5-strong rounded'
                     rippleTag='div'
@@ -88,9 +88,9 @@ export default function Projects() {
               </div>
 
               <div class="col-md-8 col-xxl-7 mb-4">
-                <h2><a href="http://54.67.45.186/home.php" className='link-primary'>GameGo</a></h2>
+                <h3><a href="http://54.67.45.186/home.php" className='link-primary'>GameGo</a></h3>
                 
-                <MDBTypography className='fs-4'>
+                <MDBTypography className='fs-5'>
                     A functional game store mock-up written in PHP and hosted on Amazon Web Service EC2. Features a registration and login module, 
                     shopping cart and checkout features, in addition to an admin GUI to manipulate a MySQL database of games and users. 
                 </MDBTypography>

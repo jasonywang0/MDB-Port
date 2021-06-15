@@ -18,7 +18,7 @@ export default function About() {
 
         <MDBRow className='justify-content-center p-3'>
             <MDBCol md={6} className='gx-5 mb-2 text-center'>
-                <MDBTypography tag='div' className='display-5 pb-3 mb-3 border-bottom tracking-in-expand' style={{fontFamily: "'Cinzel', serif", letterSpacing: '0.5rem'}}>
+                <MDBTypography tag='div' className='display-6 pb-3 mb-3 border-bottom tracking-in-expand' style={{fontFamily: "'Cinzel', serif", letterSpacing: '0.5rem'}}>
                     ABOUT
                 </MDBTypography>
             </MDBCol>
@@ -36,10 +36,10 @@ export default function About() {
 
         <MDBRow className='justify-content-center'>
               <MDBCol md={7} className='gx-5 mb-4'>
-                <MDBTypography tag='h3'>
+                <MDBTypography tag='h4'>
                    I am Jason Wang.
                 </MDBTypography>
-                <MDBTypography className='fs-3 lead mb-0 lh-l'>
+                <MDBTypography className='fs-5 lead mb-0 lh-l'>
                     {aboutMe}
                 </MDBTypography>
               </MDBCol>
@@ -47,7 +47,7 @@ export default function About() {
 
         <MDBRow className='justify-content-center pt-3'>
               <MDBCol md={7} className='gx-5'>
-                <h1 className="text-center" style={{fontFamily: "'Cinzel', serif", letterSpacing: '0.5rem'}}>SKILLS & TOOLS</h1>
+                <h3 className="text-center" style={{fontFamily: "'Cinzel', serif", letterSpacing: '0.5rem'}}>SKILLS & TOOLS</h3>
               </MDBCol>
         </MDBRow>
 

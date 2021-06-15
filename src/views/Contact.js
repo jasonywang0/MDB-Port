@@ -22,7 +22,7 @@ export default function Contact() {
 
         <MDBRow className='justify-content-center pt-3'>
             <MDBCol md={6} className='gx-5 mb-2 text-center'>
-                <MDBTypography tag='div' className='display-5 pb-3 mb-3 border-bottom tracking-in-expand' style={{fontFamily: "'Cinzel', serif", letterSpacing: '0.5rem'}}>
+                <MDBTypography tag='div' className='display-6 pb-3 mb-3 border-bottom tracking-in-expand' style={{fontFamily: "'Cinzel', serif", letterSpacing: '0.5rem'}}>
                     CONTACT
                 </MDBTypography>
             </MDBCol>
