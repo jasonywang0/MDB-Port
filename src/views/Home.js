@@ -1,21 +1,21 @@
 import React from 'react';
 import Navbar from "../components/Navbar"
-import '../styles/home.scss';
+import mountain from '../resources/mountain.jpg'
 
 export default function Home() {
   return (
     <header>
         <Navbar />
       <div
-        id="intro-example"
+        id="intro"
         className='p-5 text-center bg-image'
-        style={{ backgroundImage: "url('https://mdbcdn.b-cdn.net/img/new/slides/041.jpg')" }}
+        style={{ backgroundImage: `url(${mountain})`}}
       >
         <div className='mask' style={{ backgroundColor: 'rgba(0, 0, 0, 0.6)' }}>
           <div className='d-flex justify-content-center align-items-center h-100'>
             <div className='text-white'>
-              <h1 className='mb-5'>Hello, World!</h1>
-              <h2>I am Jason Wang.</h2>
+              <h1 id='greeting' className='mb-5'>Hello, World!</h1>
+              <h2 id='i-am'>Nice to meet you.</h2>
             </div>
           </div>
         </div>

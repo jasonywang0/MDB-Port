@@ -1,0 +1,51 @@
+@import 'mdb-react-ui-kit/dist/scss/bootstrap/functions';
+@import 'mdb-react-ui-kit/dist/scss/bootstrap/variables';
+@import 'mdb-react-ui-kit/dist/scss/bootstrap/mixins';
+
+.skill-icon {
+	font-size: 2.5rem;
+}
+
+@include media-breakpoint-up(sm) {
+	body {
+		// background-color: blue;
+	}
+	.skill-icon {
+		font-size: 3rem;
+	}
+}
+
+@include media-breakpoint-up(md) {
+	body {
+		// background-color: blue;
+	}
+	.skill-icon {
+	}
+}
+
+@include media-breakpoint-up(lg) {
+	body {
+		// background-color: red;
+	}
+
+	.skill-icon {
+	}
+}
+
+@include media-breakpoint-up(xl) {
+	body {
+		// background-color: pink;
+	}
+
+	.skill-icon {
+	}
+}
+
+@include media-breakpoint-up(xxl) {
+	body {
+		// background-color: purple;
+	}
+
+	.skill-icon {
+	}
+}
