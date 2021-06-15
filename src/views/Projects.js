@@ -10,7 +10,7 @@ import {
 
 export default function Projects() {
   return (
-    <MDBContainer id='projects' fluid className='py-0 text-white' style={{backgroundColor: '#191919'}}>
+    <MDBContainer id='projects' fluid className='py-5 text-white' style={{backgroundColor: '#191919', scrollMarginTop: '3.5rem'}}>
 
         <MDBRow className='justify-content-center pb-3'>
             <MDBCol md={6} className='gx-5 mb-2 text-center'>
@@ -33,14 +33,13 @@ export default function Projects() {
 
               <div class="col-md-8 col-xxl-7 mb-4">
                 <h4><a href="https://chimstead.shinyapps.io/cubedata/" className='link-primary'>Cube Data Aggregation</a></h4>
-               <MDBTypography style={{fontFamily: ''}}>
-                   An ongoing project maintained by web developers and a data scientist who tracks and analyzes winning Magic: The Gathering deck lists submitted from online communities.
-                    Some of the major features include tracking card prevelance over time, win percentages, deck tracking, and recommended bot picks.
+                <MDBTypography style={{fontFamily: ''}}>
+                    An ongoing project maintained by web developers and a data scientist who tracks and analyzes winning Magic: The Gathering deck lists submitted from online communities.
+                        Some of the major features include tracking card prevelance over time, win percentages, deck tracking, and recommended bot picks.
                 </MDBTypography>
-
-            <MDBBtn outline className='m-2' color='warning'>Java</MDBBtn>
-            <MDBBtn outline className='m-2' color='info'>R</MDBBtn>
-            <MDBBtn outline className='m-2' color='primary'>Bootstrap</MDBBtn>
+                <MDBBtn outline className='m-2' color='warning'>Java</MDBBtn>
+                <MDBBtn outline className='m-2' color='info'>R</MDBBtn>
+                <MDBBtn outline className='m-2' color='primary'>Bootstrap</MDBBtn>
             </div>
         </MDBRow>
 
