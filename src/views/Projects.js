@@ -32,8 +32,8 @@ export default function Projects() {
             </div>
 
               <div class="col-md-8 col-xxl-7 mb-4">
-                <h3><a href="https://chimstead.shinyapps.io/cubedata/" className='link-primary'>Cube Data Aggregation</a></h3>
-               <MDBTypography className='fs-5' style={{fontFamily: ''}}>
+                <h4><a href="https://chimstead.shinyapps.io/cubedata/" className='link-primary'>Cube Data Aggregation</a></h4>
+               <MDBTypography style={{fontFamily: ''}}>
                    An ongoing project maintained by web developers and a data scientist who tracks and analyzes winning Magic: The Gathering deck lists submitted from online communities.
                     Some of the major features include tracking card prevelance over time, win percentages, deck tracking, and recommended bot picks.
                 </MDBTypography>
@@ -58,10 +58,10 @@ export default function Projects() {
               </div>
 
               <div class="col-md-8 col-xxl-7 mb-4">
-                <h3><a href="https://github.com/jasonywang0/The-Grand-Calcutron" className='link-primary'>The Grand Calcutron</a></h3>
+                <h4><a href="https://github.com/jasonywang0/The-Grand-Calcutron" className='link-primary'>The Grand Calcutron</a></h4>
                 
-                <MDBTypography className='fs-5' >
-                     An active Discord bot responsible for providing CRUD services and social features for online communities. 
+                <MDBTypography>
+                    An active Discord bot responsible for providing CRUD services and social features for online communities. 
                     Some of the major features include an intuitive leveling and ranking system that can be completely and easily customized,
                     tag or url storage for each user, the ability to run CRUD operations via the Discord client, image generation, and url parsing and calls.
                 </MDBTypography>
@@ -88,14 +88,14 @@ export default function Projects() {
               </div>
 
               <div class="col-md-8 col-xxl-7 mb-4">
-                <h3><a href="http://54.67.45.186/home.php" className='link-primary'>GameGo</a></h3>
+                <h4><a href="http://54.67.45.186/home.php" className='link-primary'>GameGo</a></h4>
                 
-                <MDBTypography className='fs-5'>
+                <MDBTypography>
                     A functional game store mock-up written in PHP and hosted on Amazon Web Service EC2. Features a registration and login module, 
                     shopping cart and checkout features, in addition to an admin GUI to manipulate a MySQL database of games and users. 
                 </MDBTypography>
                 
-                <MDBBtn outline className='m-2' color='primary'>PHP</MDBBtn>
+                <MDBBtn outline className='m-2' color='primary' style={{cursor: 'default'}}>PHP</MDBBtn>
                 <MDBBtn outline className='m-2' color='info'>MySQL</MDBBtn>
                 <MDBBtn outline className='m-2' color='secondary'>AWS</MDBBtn>
             </div>
