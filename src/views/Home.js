@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div
       id="intro"
-      className='p-5 text-center bg-image'
+      className='text-center bg-image'
       style={{ backgroundImage: `url(${mountain})`}}
     >
       <div className='mask' style={{ backgroundColor: 'rgba(0, 0, 0, 0.6)' }}>
