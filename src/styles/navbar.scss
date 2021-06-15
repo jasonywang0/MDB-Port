@@ -12,26 +12,18 @@
 
 .sidenav.open {
 	width: 8rem;
-  }
-  
-  /* The navigation menu links */
-  .sidenav a {
+}
+
+/* The navigation menu links */
+.sidenav a {
 	text-decoration: none;
 	color: white;
 	display: block;
-	padding: 0.75rem 1rem;
+	padding: 0.5rem 1rem;
 	transition: 0.3s;
-  }
-  
-  /* When you mouse over the navigation links, change their color */
-  .sidenav a:hover {
-	color: #bc9864 ;
-  }
-  
+}
 
-
-  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-  @media screen and (max-height: 450px) {
-	.sidenav {padding-top: 15px;}
-	.sidenav a {font-size: 18px;}
-  }
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+	color: #bc9864;
+}

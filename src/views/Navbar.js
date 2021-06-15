@@ -22,9 +22,9 @@ export default function App() {
         <a href="#contact">Contact</a>
       </div>
     
-      <MDBNavbar style={{height: '3.5rem'}} light style={{backgroundColor: '#bc9864'}} fixed>
+      <MDBNavbar style={{height: '3.5rem', backgroundColor: '#bc9864'}} className='p-0' fixed>
         <MDBContainer fluid className='justify-content-between'>
-        <MDBNavbarBrand href='#home'className='fw-bold' style={{fontFamily: "'Cinzel', serif"}}>JASON WANG</MDBNavbarBrand>
+        <MDBNavbarBrand href='#home'className='fw-bold' style={{fontFamily: "'Cinzel', serif", color: 'black'}}>JASON WANG</MDBNavbarBrand>
           <MDBNavbarToggler
             type='button'
             data-target='#sidenav'
@@ -33,7 +33,11 @@ export default function App() {
             aria-label='Toggle navigation'
             onClick={() => setShowNavExternal(!showNavExternal)}
           >
-            <MDBIcon icon='bars' fas  />
+            {
+                showNavExternal 
+                ? <MDBIcon icon='times' fas size='lg'/>
+                : <MDBIcon icon='bars' fas size='lg'/>
+            }  
           </MDBNavbarToggler>
         </MDBContainer>
       </MDBNavbar>
