@@ -18,7 +18,7 @@ import { VscEllipsis } from 'react-icons/vsc';
 
 export default function Contact() {
   return (
-    <MDBContainer fluid className='text-white pb-5' style={{backgroundColor: '#191919'}}>
+    <MDBContainer id='contact' fluid className='text-white pb-5' style={{backgroundColor: '#191919'}}>
 
         <MDBRow className='justify-content-center pt-3'>
             <MDBCol md={6} className='gx-5 mb-2 text-center'>
@@ -30,13 +30,12 @@ export default function Contact() {
 
         <MDBRow className='justify-content-center'>
             
-            <div class="col-lg-6">
-                <div class="contact-wrap">
+            <div class="col-sm-9 col-md-8 col-lg-6 col-xl-5">
 
-                    <div id="form-message-warning" class="mb-4 w-100 text-center"></div>
-                    <div id="form-message-success" class="mb-4 w-100 text-center">
-                        Your message was sent, thank you!
-                    </div>
+                <div id="form-message-warning" class="mb-4 w-100 text-center"></div>
+                <div id="form-message-success" class="mb-4 w-100 text-center">
+                    Your message was sent, thank you!
+                </div>
 
                 <form method="POST" id="contactForm" name="contactForm" class="contactForm" novalidate="novalidate">
                     <div class="row p-0 m-0">
@@ -79,12 +78,9 @@ export default function Contact() {
                                 <div class="submitting"></div>
                             </div>
                         </div>
-
                     </div>
                 </form>
             </div>
-
-        </div>
         </MDBRow>
 
     </MDBContainer>

@@ -10,7 +10,7 @@ import {
 
 export default function Projects() {
   return (
-    <MDBContainer fluid className='py-0 text-white' style={{backgroundColor: '#191919'}}>
+    <MDBContainer id='projects' fluid className='py-0 text-white' style={{backgroundColor: '#191919'}}>
 
         <MDBRow className='justify-content-center pb-3'>
             <MDBCol md={6} className='gx-5 mb-2 text-center'>

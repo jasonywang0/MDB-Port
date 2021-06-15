@@ -14,7 +14,7 @@ import { VscEllipsis } from 'react-icons/vsc';
 
 export default function About() {
   return (
-    <MDBContainer fluid className='py-5 text-white' style={{backgroundColor: '#191919'}}>
+    <MDBContainer id='about' fluid className='py-5 text-white' style={{backgroundColor: '#191919'}}>
 
         <MDBRow className='justify-content-center p-3'>
             <MDBCol md={6} className='gx-5 mb-2 text-center'>
