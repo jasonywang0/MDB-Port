@@ -9,7 +9,14 @@ import {
     MDBInputGroup,
     MDBInputGroupText,
     MDBInput,
-    MDBInputGroupElement
+    MDBInputGroupElement,
+    MDBCard,
+    MDBCardImage,
+    MDBCardBody,
+    MDBCardTitle,
+    MDBCardText,
+    MDBIcon
+
 } from 'mdb-react-ui-kit';
 import aboutMe from '../resources/aboutMe';
 import { FaBootstrap, FaGitSquare, FaReact, FaSass, FaNode } from 'react-icons/fa';
@@ -27,6 +34,19 @@ export default function Contact() {
                 </MDBTypography>
             </MDBCol>
         </MDBRow>
+
+        <MDBRow className='justify-content-center align-items-center text-center'>
+                <div className="d-flex text-center justify-content-center align-items-center">
+                    <div className='d-flex text-center justify-content-center align-items-center' style={{backgroundColor: '#bc9864', borderRadius: '50%', height: '4rem', width: '4rem'}}>
+                        <MDBIcon icon='envelope' far size='2x' color='black'/>
+                    </div>
+                </div>
+                <div class="text-center py-1">
+                    <h5>jasonywang0@gmail.com</h5>
+                </div>
+
+
+        </MDBRow>        
 
         <MDBRow className='justify-content-center'>
             
