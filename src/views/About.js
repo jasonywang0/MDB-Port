@@ -14,11 +14,11 @@ import { VscEllipsis } from 'react-icons/vsc';
 
 export default function About() {
   return (
-    <MDBContainer id='about' fluid className='py-5 text-white' style={{backgroundColor: '#191919'}}>
+    <MDBContainer id='about' fluid className='text-white align-items-center' style={{backgroundColor: '#191919', scrollMarginTop: '3.5rem'}}>
 
-        <MDBRow className='justify-content-center p-3'>
-            <MDBCol md={6} className='gx-5 mb-2 text-center'>
-                <MDBTypography tag='div' className='display-6 pb-3 mb-3 border-bottom tracking-in-expand' style={{fontFamily: "'Cinzel', serif", letterSpacing: '0.5rem'}}>
+        <MDBRow className='justify-content-center py-4'>
+            <MDBCol md={6} className='gx-5 pb-2'>
+                <MDBTypography tag='div' className='text-center display-6 pb-3 mb-3 border-bottom tracking-in-expand' style={{fontFamily: "'Cinzel', serif", letterSpacing: '0.5rem'}}>
                     ABOUT
                 </MDBTypography>
             </MDBCol>
@@ -34,8 +34,8 @@ export default function About() {
             </MDBCol>
         </MDBRow>
 
-        <MDBRow className='justify-content-center'>
-              <MDBCol md={7} className='gx-5 mb-4'>
+        <MDBRow className='py-4 justify-content-center'>
+              <MDBCol md={7} xl={5} className='gx-5 mb-4'>
                 <MDBTypography tag='h4'>
                    I am Jason Wang.
                 </MDBTypography>
@@ -45,27 +45,104 @@ export default function About() {
               </MDBCol>
         </MDBRow>
 
-        <MDBRow className='justify-content-center pt-3'>
+        <MDBRow className='pt-2 justify-content-center'>
               <MDBCol md={7} className='gx-5'>
                 <h3 className="text-center" style={{fontFamily: "'Cinzel', serif", letterSpacing: '0.5rem'}}>SKILLS & TOOLS</h3>
               </MDBCol>
         </MDBRow>
 
-        <MDBRow className='justify-content-center'>
-            <div className='justify-content-center m-0 p-0 pt-3 col-9 col-sm-6 col-lg-5 col-xl-4 col-xxl-4'>
-                <MDBListGroup horizontal className='flex-wrap align-items-center justify-content-center gap-4 gap-sm-2 gap-lg-4 gap-xl-4 gap-xxl-2'>
-                    <MDBListGroupItem className='p-1 m-1 p-xxl-3 m-xxl-2'><SiJavascript className='m-0 skill-icon' title="CSS3"></SiJavascript></MDBListGroupItem>
-                    <MDBListGroupItem className='p-1 m-1 p-xxl-3 m-xxl-2'><SiHtml5 className='skill-icon' title="CSS3"></SiHtml5></MDBListGroupItem>
-                    <MDBListGroupItem className='p-1 m-1 p-xxl-3 m-xxl-2'><SiCss3 className='skill-icon' title="CSS3"></SiCss3></MDBListGroupItem>
-                    <MDBListGroupItem className='p-1 m-1 p-xxl-3 m-xxl-2'><FaBootstrap className='skill-icon' title="CSS3"></FaBootstrap></MDBListGroupItem>
-                    <MDBListGroupItem className='p-1 m-1 p-xxl-3 m-xxl-2'><SiJquery className='skill-icon' title="CSS3"></SiJquery></MDBListGroupItem>
-                    <MDBListGroupItem className='p-1 m-1 p-xxl-3 m-xxl-2'><FaSass className='skill-icon' title="CSS3"></FaSass></MDBListGroupItem>
-                    <MDBListGroupItem className='p-1 m-1 p-xxl-3 m-xxl-2'><FaReact className='skill-icon' title="CSS3"></FaReact></MDBListGroupItem>
-                    <MDBListGroupItem className='p-1 m-1 p-xxl-3 m-xxl-2'><FaNode className='skill-icon' title="CSS3"></FaNode></MDBListGroupItem>
-                    <MDBListGroupItem className='p-1 m-1 p-xxl-3 m-xxl-2'><SiMysql className='skill-icon' title="CSS3"></SiMysql></MDBListGroupItem>
-                    <MDBListGroupItem className='p-1 m-1 p-xxl-3 m-xxl-2'><SiMongodb className='skill-icon' title="CSS3"></SiMongodb></MDBListGroupItem>
-                    <MDBListGroupItem className='p-1 m-1 p-xxl-3 m-xxl-2'><FaGitSquare className='skill-icon' title="CSS3"></FaGitSquare></MDBListGroupItem>
-                    <MDBListGroupItem className='p-1 m-1 p-xxl-3 m-xxl-2'><VscEllipsis className='skill-icon' title="CSS3"></VscEllipsis></MDBListGroupItem>
+        <MDBRow className='pb-5 justify-content-center'>
+
+            <div className='col-12 col-sm-10 col-md-7 col-lg-6 col-xl-5 col-xxl-4 m-0 p-0 pt-3 justify-content-center'>
+                
+                <MDBListGroup horizontal className='flex-wrap align-items-center justify-content-center gap-4'>
+
+                    <MDBListGroupItem className='p-0'>
+                        <div className="d-flex figure">
+                            <SiJavascript className='skill-icon image-main' size='5rem' title="javascript"></SiJavascript>
+                            <span className='image-hover'>Java<br></br>Script</span>
+                        </div>      
+                    </MDBListGroupItem>
+                    
+                    <MDBListGroupItem className='p-0'>
+                        <div className="d-flex figure">
+                            <SiHtml5 className='skill-icon image-main' size='5rem' title="html5"></SiHtml5>
+                            <span className='image-hover'>HTML5</span>
+                        </div>      
+                    </MDBListGroupItem>
+
+                    <MDBListGroupItem className='p-0'>
+                        <div className="d-flex figure">
+                            <SiCss3 className='skill-icon image-main' size='5rem' title='css3'></SiCss3>
+                            <span className='image-hover'>CSS3</span>
+                        </div>     
+                    </MDBListGroupItem>
+
+                    <MDBListGroupItem className='p-0'>
+                        <div className="d-flex figure">
+                            <FaBootstrap className='skill-icon image-main' size='5rem' title="bootstrap"></FaBootstrap>
+                            <span className='image-hover'>Boot<br></br>Strap</span>
+                        </div>     
+                    </MDBListGroupItem>
+
+                    <MDBListGroupItem className='p-0'>
+                        <div className="d-flex figure">
+                            <SiJquery className='skill-icon image-main'size='5rem' title="jquery"></SiJquery>
+                            <span className='image-hover'>jQuery</span>
+                        </div>     
+                    </MDBListGroupItem>
+
+                    <MDBListGroupItem className='p-0'>
+                        <div className="d-flex figure">
+                            <FaSass className='skill-icon image-main' size='5rem' title="sass"></FaSass>
+                            <span className='image-hover'>Sass</span>
+                        </div>     
+                    </MDBListGroupItem>
+
+                    <MDBListGroupItem className='p-0'>
+                        <div className="d-flex figure">
+                            <FaReact className='skill-icon image-main' size='5rem' title="react"></FaReact>
+                            <span className='image-hover'>React</span>
+                        </div>     
+                    </MDBListGroupItem>
+
+
+                    <MDBListGroupItem className='p-0'>
+                        <div className="d-flex figure">
+                            <FaNode className='skill-icon image-main' size='5rem' title="node"></FaNode>
+                            <span className='image-hover'>Node</span>
+                        </div>     
+                    </MDBListGroupItem>
+
+                    
+                    <MDBListGroupItem className='p-0'>
+                        <div className="d-flex figure">
+                            <SiMysql className='skill-icon image-main' size='5rem' title="mysql"></SiMysql>
+                            <span className='image-hover'>MySQL</span>
+                        </div>     
+                    </MDBListGroupItem>
+
+                    <MDBListGroupItem className='p-0'>
+                        <div className="d-flex figure">
+                            <SiMongodb className='skill-icon image-main' size='5rem' title="mongodb"></SiMongodb>
+                            <span className='image-hover'>Mongo<br></br>DB</span>
+                        </div>     
+                    </MDBListGroupItem>
+
+                    <MDBListGroupItem className='p-0'>
+                        <div className="d-flex figure">
+                            <FaGitSquare className='skill-icon image-main' size='5rem' title="git"></FaGitSquare>
+                            <span className='image-hover'>Git</span>
+                        </div>     
+                    </MDBListGroupItem>
+
+                    <MDBListGroupItem className='p-0'>
+                        <div className="d-flex figure">
+                            <VscEllipsis className='skill-icon image-main' size='5rem' title="etc"></VscEllipsis>
+                            <span className='image-hover'>Etc.</span>
+                        </div>     
+                    </MDBListGroupItem>
+
                 </MDBListGroup>
             </div>
         </MDBRow> 

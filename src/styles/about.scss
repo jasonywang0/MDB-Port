@@ -2,50 +2,86 @@
 @import 'mdb-react-ui-kit/dist/scss/bootstrap/variables';
 @import 'mdb-react-ui-kit/dist/scss/bootstrap/mixins';
 
+.list-group-horizontal > .list-group-item + .list-group-item {
+	border: 3px goldenrod solid;
+}
+
+.list-group-horizontal > .list-group-item:first-child {
+	border: 3px goldenrod solid;
+}
+
 .skill-icon {
-	font-size: 2.5rem;
+	padding: 0.5rem;
 }
 
-@include media-breakpoint-up(sm) {
-	body {
-		// background-color: blue;
-	}
-	.skill-icon {
-		font-size: 3rem;
-	}
+.figure {
+	display: flex;
+	position: relative;
 }
 
-@include media-breakpoint-up(md) {
-	body {
-		// background-color: blue;
-	}
-	.skill-icon {
-	}
+.figure:hover .image-main {
+	color: white;
 }
 
-@include media-breakpoint-up(lg) {
-	body {
-		// background-color: red;
-	}
-
-	.skill-icon {
-	}
+.figure .image-hover {
+	position: absolute;
+	right: 0;
+	top: 50%; /* position the top  edge of the element at the middle of the parent */
+	left: 50%; /* position the left edge of the element at the middle of the parent */
+	width: 100%;
+	text-align: center;
+	transform: translate(-50%, -50%);
+	object-fit: contain;
+	opacity: 0;
+	transition: opacity 0.2s;
+	color: black;
+	font-size: 1.25rem;
+	font-weight: 500;
+}
+.figure:hover .image-hover {
+	opacity: 1;
 }
 
-@include media-breakpoint-up(xl) {
-	body {
-		// background-color: pink;
-	}
+// @include media-breakpoint-up(sm) {
+// 	body {
+// 		background-color: green;
+// 	}
+// 	.skill-icon {
+// 		font-size: 3.25rem;
+// 	}
+// }
 
-	.skill-icon {
-	}
-}
+// @include media-breakpoint-up(md) {
+// 	body {
+// 		background-color: blue;
+// 	}
+// 	.skill-icon {
+// 	}
+// }
 
-@include media-breakpoint-up(xxl) {
-	body {
-		// background-color: purple;
-	}
+// @include media-breakpoint-up(lg) {
+// 	body {
+// 		background-color: red;
+// 	}
 
-	.skill-icon {
-	}
-}
+// 	.skill-icon {
+// 	}
+// }
+
+// @include media-breakpoint-up(xl) {
+// 	body {
+// 		background-color: pink;
+// 	}
+
+// 	.skill-icon {
+// 	}
+// }
+
+// @include media-breakpoint-up(xxl) {
+// 	body {
+// 		background-color: purple;
+// 	}
+
+// 	.skill-icon {
+// 	}
+// }
