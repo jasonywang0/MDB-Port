@@ -20,11 +20,11 @@
 
 #i-am {
 	opacity: 0;
-	animation: fadeIn 2s linear 1.5s forwards;
-	-webkit-animation: fadeIn 2s linear 1.5s forwards;
-	-moz-animation: fadeIn 2s linear 1.5s forwards;
-	-o-animation: fadeIn 2s linear 1.5s forwards;
-	-ms-animation: fadeIn 2s linear 1.5s forwards;
+	animation: fadeIn 2s linear 1s forwards;
+	-webkit-animation: fadeIn 2s linear 1s forwards;
+	-moz-animation: fadeIn 2s linear 1s forwards;
+	-o-animation: fadeIn 2s linear 1s forwards;
+	-ms-animation: fadeIn 2s linear 1s forwards;
 }
 
 @keyframes fadeIn {
