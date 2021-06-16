@@ -21,7 +21,7 @@ export default function Projects() {
         </MDBRow>
 
         <MDBRow className='justify-content-center p-3'>
-            <div className="col-9 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-3 mb-4">
+            <div className="col-9 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-2 mb-4">
                 <MDBRipple
                     className='bg-image hover-zoom shadow-5-strong rounded'
                     rippleTag='div'
@@ -45,7 +45,7 @@ export default function Projects() {
 
 
         <MDBRow className='justify-content-center p-3'>
-            <div className="col-9 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-3 mb-4">
+            <div className="col-9 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-2 mb-4">
                 <MDBRipple
                     className='bg-image hover-overlay shadow-5-strong rounded'
                     rippleTag='div'
@@ -75,7 +75,7 @@ export default function Projects() {
         </MDBRow>
 
         <MDBRow className='justify-content-center px-3 pt-3'>
-            <div className="col-9 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-3 mb-4">
+            <div className="col-9 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-2 mb-4">
                 <MDBRipple
                     className='bg-image hover-overlay shadow-5-strong rounded'
                     rippleTag='div'
