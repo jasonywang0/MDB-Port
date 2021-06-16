@@ -1,14 +1,14 @@
 import React from 'react';
-import mountain from '../resources/mountain.jpg'
+import ring from '../resources/ring.jpg'
 
 export default function Home() {
   return (
     <div
       id="intro"
       className='text-center bg-image'
-      style={{ backgroundImage: `url(${mountain})`}}
+      style={{ backgroundImage: `url(${ring})`}}
     >
-      <div className='mask' style={{ backgroundColor: 'rgba(0, 0, 0, 0.6)' }}>
+      <div className='mask' style={{ backgroundColor: 'rgba(0, 0, 0, 0.65)' }}>
         <div className='d-flex justify-content-center align-items-center h-100'>
           <div className='text-white'>
             <h1 id='greeting' className='mb-5'>Hello, World!</h1>
