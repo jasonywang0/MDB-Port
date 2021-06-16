@@ -1,12 +1,11 @@
 import React from 'react';
-import ring from '../resources/ring.jpg'
 
 export default function Home() {
   return (
     <div
       id="intro"
       className='text-center bg-image'
-      style={{ backgroundImage: `url(${ring})`}}
+      style={{ backgroundImage: "url('ring.jpg')"}}
     >
       <div className='mask' style={{ backgroundColor: 'rgba(0, 0, 0, 0.65)' }}>
         <div className='d-flex justify-content-center align-items-center h-100'>
