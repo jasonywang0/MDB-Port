@@ -24,7 +24,7 @@ export default function App() {
     
       <MDBNavbar style={{height: '3.5rem', backgroundColor: '#bc9864'}} className='p-0' fixed>
         <MDBContainer fluid className='justify-content-between'>
-        <MDBNavbarBrand href='#home'className='fw-bold' style={{fontFamily: "'Cinzel', serif", color: 'black'}}>JASON WANG</MDBNavbarBrand>
+        <MDBNavbarBrand href='/' className='fs-2' style={{fontFamily: "Cinzel, serif", color: 'black'}}>JASON WANG</MDBNavbarBrand>
           <MDBNavbarToggler
             type='button'
             data-target='#sidenav'
