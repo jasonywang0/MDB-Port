@@ -28,8 +28,17 @@ Write bootstrap overrides here
 @import 'about';
 @import 'contact';
 
+html {
+	overflow: hidden;
+}
+
+body {
+	overflow: auto;
+}
+
 html,
 body {
+	height: 100%;
 	overscroll-behavior: none;
 }
 
