@@ -51,7 +51,7 @@ export default function About() {
               </MDBCol>
         </MDBRow>
 
-        <MDBRow className='pb-5 justify-content-center'>
+        <MDBRow className='justify-content-center'>
 
             <div className='col-12 col-sm-10 col-md-7 col-lg-6 col-xl-5 col-xxl-4 m-0 p-0 pt-3 justify-content-center'>
                 
