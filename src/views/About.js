@@ -28,7 +28,7 @@ export default function About() {
         <MDBRow className='justify-content-center'>
             <MDBCol sm={8} md={6} lg={5} xl={3} className='gx-5 mb-4'>
               <div className="bg-image hover-overlay ripple shadow-2-strong rounded-5" data-mdb-ripple-color="light">
-                <img src="https://mdbootstrap.com/img/new/slides/031.jpg" className="img-fluid img-thumbnail" alt="portrait"/>
+                <img src='dog.jpg' className="img-fluid img-thumbnail" alt="portrait"/>
                   <div className="mask" style={{backgroundColor: "rgba(251, 251, 251, 0.15)"}}></div>
               </div>
             </MDBCol>
@@ -36,10 +36,10 @@ export default function About() {
 
         <MDBRow className='py-4 justify-content-center'>
               <MDBCol md={7} xl={5} className='gx-5 mb-4'>
-                <MDBTypography tag='h4'>
+                {/* <MDBTypography tag='h4'>
                    I am Jason Wang.
-                </MDBTypography>
-                <MDBTypography className='fs-5 lead mb-0 lh-l'>
+                </MDBTypography> */}
+                <MDBTypography className='fs-4 lead mb-0 lh-l'>
                     {aboutMe}
                 </MDBTypography>
               </MDBCol>
