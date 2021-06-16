@@ -28,17 +28,9 @@ Write bootstrap overrides here
 @import 'about';
 @import 'contact';
 
-html {
-	overflow: hidden;
-}
-
-body {
-	overflow: auto;
-}
-
 html,
 body {
-	height: 100%;
+	background-color: '#191919';
 	overscroll-behavior: none;
 }
 
@@ -47,7 +39,6 @@ body {
 		Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	background-color: '#191919';
 }
 
 // @include media-breakpoint-up(sm) {
