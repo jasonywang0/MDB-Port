@@ -1,20 +1,18 @@
-/* The side navigation menu */
 .sidenav {
 	width: 0px;
-	height: 100%; /* 100% Full-height */
-	position: fixed; /* Stay in place */
-	z-index: 1; /* Stay on top */
+	height: 100%;
+	position: fixed;
+	z-index: 1;
 	right: 0;
 	top: 3.5rem;
-	background-color: #111; /* Black*/
-	transition: 0.3s; /* 0.5 second transition effect to slide in the sidenav */
+	background-color: #111;
+	transition: 0.3s;
 }
 
 .sidenav.open {
 	width: 8rem;
 }
 
-/* The navigation menu links */
 .sidenav a {
 	text-decoration: none;
 	color: white;
@@ -23,7 +21,6 @@
 	transition: 0.3s;
 }
 
-/* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
 	color: #bc9864;
 }
