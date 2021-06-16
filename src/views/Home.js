@@ -17,20 +17,23 @@ const StyledProgressiveImage = styled(ProgressiveImage)`
 
 export default function Home() {
   return (
-    <MDBContainer fluid className='p-0 m-0 justify-content-center align-items-center'>
-        <MDBRow>
-            <MDBCol className='p-0 m-0 justify-content-center text-center align-items-center'>
+    <MDBContainer id="intro" fluid className='p-0 m-0'>
+        <MDBRow className='p-0 m-0'>
+            <MDBCol className='col-12 p-0 m-0 justify-content-center text-center align-items-center'>
+                
                 <StyledProgressiveImage
-                src='ring.jpg'
-                placeholder='ring-thumb.jpg'
-                transition="all 0.3s linear"
+                  src='ring.jpg'
+                  placeholder='ring-thumb.jpg'
+                  transition="all 0.3s linear"
                 />;
+
                 <div className='mask' style={{ backgroundColor: 'rgba(0, 0, 0, 0.3)' }}></div>
 
-                <div className='text-white' style={{position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)'}}>
-                    <h1 id='greeting' className='mb-5'>Hello, World!</h1>
-                    <h2 id='i-am'>Nice to meet you.</h2>
+                <div style={{position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', width: '100%'}}>
+                    <h1 id='greeting' className='fs-3 mb-3'>Hello, World!</h1>
+                    <h2 id='nice' className='fs-5'>Nice to meet you.</h2>
                 </div>
+
             </MDBCol>
         </MDBRow>
     </MDBContainer>

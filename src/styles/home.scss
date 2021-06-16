@@ -1,6 +1,7 @@
 /* Default height for small devices */
 #intro {
 	height: 100vh;
+	color: white;
 }
 
 #greeting {
@@ -11,7 +12,7 @@
 	-ms-animation: fadeIn 2s linear 0s forwards;
 }
 
-#i-am {
+#nice {
 	opacity: 0;
 	animation: fadeIn 2s linear 1s forwards;
 	-webkit-animation: fadeIn 2s linear 1s forwards;
