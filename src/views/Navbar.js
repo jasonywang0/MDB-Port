@@ -4,10 +4,7 @@ import React, { useState } from 'react';
     MDBContainer,
     MDBNavbarBrand,
     MDBNavbarToggler,
-    MDBNavbarItem,
-    MDBNavbarLink,
     MDBIcon,
-    MDBCollapse
   } from 'mdb-react-ui-kit';
 
 export default function App() {

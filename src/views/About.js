@@ -9,7 +9,7 @@ import {
 } from 'mdb-react-ui-kit';
 import aboutMe from '../resources/aboutMe';
 import { FaBootstrap, FaGitSquare, FaReact, FaSass, FaNode } from 'react-icons/fa';
-import { SiJavascript, SiHtml5, SiCss3, SiMongodb, SiMysql, SiJquery, SiFireBase } from 'react-icons/si';
+import { SiJavascript, SiHtml5, SiCss3, SiMongodb, SiMysql, SiJquery } from 'react-icons/si';
 import { VscEllipsis } from 'react-icons/vsc';
 
 export default function About() {
