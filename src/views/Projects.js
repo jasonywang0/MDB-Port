@@ -21,7 +21,7 @@ export default function Projects() {
         </MDBRow>
 
         <MDBRow className='justify-content-center p-3'>
-            <div class="col-9 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-3 mb-4">
+            <div className="col-9 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-3 mb-4">
                 <MDBRipple
                     className='bg-image hover-zoom shadow-5-strong rounded'
                     rippleTag='div'
@@ -45,7 +45,7 @@ export default function Projects() {
 
 
         <MDBRow className='justify-content-center p-3'>
-            <div className="col-9 col-sm-6 col-md-4 col-lg-4 col-xl-4 col-xxl-3 mb-4">
+            <div className="col-9 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-3 mb-4">
                 <MDBRipple
                     className='bg-image hover-overlay shadow-5-strong rounded'
                     rippleTag='div'
@@ -56,7 +56,7 @@ export default function Projects() {
                 </MDBRipple>
               </div>
 
-              <div class="col-md-8 col-xxl-7 mb-4">
+              <div className="col-md-8 col-xxl-7 mb-4">
                 <h4><a href="https://github.com/jasonywang0/The-Grand-Calcutron" className='link-primary'>The Grand Calcutron</a></h4>
                 
                 <MDBTypography>
@@ -75,7 +75,7 @@ export default function Projects() {
         </MDBRow>
 
         <MDBRow className='justify-content-center px-3 pt-3'>
-            <div className="col-9 col-sm-6 col-md-4 col-lg-4 col-xl-3 scol-xxl-3 mb-4">
+            <div className="col-9 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-3 mb-4">
                 <MDBRipple
                     className='bg-image hover-overlay shadow-5-strong rounded'
                     rippleTag='div'
@@ -86,7 +86,7 @@ export default function Projects() {
                 </MDBRipple>
               </div>
 
-              <div class="col-md-8 col-xxl-7 mb-4">
+              <div className="col-md-8 col-xxl-7 mb-4">
                 <h4><a href="http://54.67.45.186/home.php" className='link-primary'>GameGo</a></h4>
                 
                 <MDBTypography>
