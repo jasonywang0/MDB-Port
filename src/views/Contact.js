@@ -9,29 +9,20 @@ import {
 
 
 function StatusMessage({status}) {
-    let message = '';
-    const style = {
-        color: 'yellow',
-        fontWeight: 500
-    };
+    let message = 'Something went wrong. Please try again later.';
+    const style = { color: 'red', fontWeight: 500 };
 
-    if (status === 'SENDING') {
+    if (status === 'INCOMPLETE') {
+        message = 'All Fields Are Required.'
+    } else if (status === 'SENDING') {
         message = 'Sending Message.'
-    } else if (status === 'INCOMPLETE') {
-        message = 'All Fields are Required.'
-        style.color ='red'
+        style.color = 'yellow';
     } else if (status === 'SENT') {
         message = 'Message Sent!'
         style.color = 'green';
-    } else if (status === 'ERROR') {
-        message = 'Something went wrong. Please try again later.'
-    }
+    } 
     
-    return (
-        <div style={style}>
-            {message}
-        </div>
-    )
+    return <div style={style}>{message}</div>
 }
 
 export default function Contact() {
@@ -47,29 +38,33 @@ export default function Contact() {
   const changeValue = (e) => setFormValue((prev) => ({ ...prev, [e.target.name]: e.target.value}))
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
-    const { name, email, subject, message } = formValue;
-    if (!name || !email || !subject || !message) return setStatus('INCOMPLETE');
-    setStatus("SENDING");
 
-    let details = {
-      name: name.value,
-      email: email.value,
-      subject: subject.value,
-      message: message.value,
-    };
-
-    let response = await fetch("http://localhost:5000/contact", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json;charset=utf-8",
-      },
-      body: JSON.stringify(details),
-    });
-    let result = await response.json(); // possible values are 'SENT' or 'ERROR
-    console.log(result.status);
-    if (result.status === 'SENT') setFormValue({name: '', email: '', subject: '', message: ''});
-    setStatus(result.status);
+    try {
+        e.preventDefault();
+        const { name, email, subject, message } = formValue;
+        if (!name || !email || !subject || !message) return setStatus('INCOMPLETE');
+        
+        const details = {
+            name,
+            email,
+            subject,
+            message
+        };
+        
+        setStatus("SENDING");
+        const response = await fetch("https://jasonywang0-contact.herokuapp.com/", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json;charset=utf-8",
+          },
+          body: JSON.stringify(details),
+        });
+        const result = await response.json(); // possible values are 'SENT' or 'ERROR'
+        if (result.status === 'SENT') setFormValue({name: '', email: '', subject: '', message: ''});
+        setStatus(result.status);
+    } catch(error) {
+        setStatus('ERROR');
+    }
   };
 
 
@@ -90,7 +85,7 @@ export default function Contact() {
                         <MDBIcon icon='envelope' far size='2x' color='black'/>
                     </div>
                 </div>
-                <div class="text-center py-1">
+                <div className="text-center py-1">
                     <h5>jasonywang0@gmail.com</h5>
                 </div>
 
@@ -98,39 +93,40 @@ export default function Contact() {
 
         <MDBRow className='justify-content-center'>
             
-            <div class="col-sm-9 col-md-8 col-lg-6 col-xl-5 col-xxl-4">
+            <div className="col-sm-9 col-md-8 col-lg-6 col-xl-5 col-xxl-4">
                 
-                <div class="row p-0 m-0">
-                    <div class='col-md-12'>
-                        <StatusMessage status={status}/>
+                <div className="row p-0 m-0">
+                    <div className='col-md-12'>
+                        {status && <StatusMessage status={status}/>}
                     </div>
                 </div>
                 
-                <form id="contactForm" name="contactForm" class="contactForm" novalidate="novalidate" onSubmit={handleSubmit}>
-                    <div class="row p-0 m-0">
-                        <div class="col-md-12 my-2">
-                            <div class="form-group">
-                                <input type="text" class="form-control" name="name" id="name" placeholder="Name*" value={formValue.name} onChange={changeValue} required/>
+                <form id="contactForm" name="contactForm" className="contactForm" onSubmit={handleSubmit}>
+                    <div className="row p-0 m-0">
+                    
+                        <div className="col-md-12 my-2">
+                            <div className="form-group">
+                                <input type="text" className="form-control" name="name" id="name" placeholder="Name*" value={formValue.name} onChange={changeValue} required/>
                             </div>
                         </div>
 
-                        <div class="col-md-12 my-2">
-                            <div div class="form-group">
-                                <input type="email" class="form-control" name="email" id="email" value={formValue.email} onChange={changeValue} placeholder="Email*"/>
+                        <div className="col-md-12 my-2">
+                            <div className="form-group">
+                                <input type="email" className="form-control" name="email" id="email" value={formValue.email} onChange={changeValue} placeholder="Email*"/>
                             </div>
                         </div>
 
-                        <div class="col-md-12 my-2">
-                            <div class="form-group">
-                                <input type="text" class="form-control" name="subject" id="subject" value={formValue.subject} onChange={changeValue} placeholder="Subject*"/>
+                        <div className="col-md-12 my-2">
+                            <div className="form-group">
+                                <input type="text" className="form-control" name="subject" id="subject" value={formValue.subject} onChange={changeValue} placeholder="Subject*"/>
                             </div>
                         </div>
 
-                        <div class="col-md-12 my-2">
-                            <div class="form-group">
+                        <div className="col-md-12 my-2">
+                            <div className="form-group">
                                 <textarea 
                                     name="message" 
-                                    class="form-control error" 
+                                    className="form-control error" 
                                     id="message"
                                     value={formValue.message} 
                                     cols="25" 
@@ -139,14 +135,14 @@ export default function Contact() {
                                     aria-invalid="true" 
                                     onChange={changeValue}
                                 ></textarea>
-                                {/* <label id="message-error" class="error" for="message">Please enter a message</label> */}
+                                {/* <label id="message-error" className="error" for="message">Please enter a message</label> */}
                             </div>
                         </div>
                 
-                        <div class="col-md-12 my-2">
-                            <div class="form-group">
-                                <input id="submit-message" type="submit" value="Send Message" class="btn btn-primary"/>
-                                <div class="submitting"></div>
+                        <div className="col-md-12 my-2">
+                            <div className="form-group">
+                                <input id="submit-message" type="submit" value="Send Message" className="btn btn-primary"/>
+                                <div className="submitting"></div>
                             </div>
                         </div>
                     </div>
