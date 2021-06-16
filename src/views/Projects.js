@@ -95,6 +95,7 @@ export default function Projects() {
                 </MDBTypography>
                 
                 <MDBBtn outline className='m-2' color='primary' style={{cursor: 'default'}}>PHP</MDBBtn>
+                <MDBBtn outline className='m-2' color='danger' style={{cursor: 'default'}}>Apache</MDBBtn>
                 <MDBBtn outline className='m-2' color='info' style={{cursor: 'default'}}>MySQL</MDBBtn>
                 <MDBBtn outline className='m-2' color='secondary' style={{cursor: 'default'}}>AWS</MDBBtn>
             </div>
