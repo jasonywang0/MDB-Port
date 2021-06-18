@@ -6,7 +6,7 @@ import {
     MDBTypography,
     MDBIcon
 } from 'mdb-react-ui-kit';
-
+import Fade from '../components/Fade';
 
 function StatusMessage({status}) {
     let message = 'Something went wrong. Please try again later.';
@@ -69,88 +69,92 @@ export default function Contact() {
 
 
   return (
-    <MDBContainer id='contact' fluid className='text-white py-5' style={{backgroundColor: '#191919'}}>
+    
+        <MDBContainer id='contact' fluid className='text-white py-5' style={{backgroundColor: '#191919'}}>
 
-        <MDBRow className='justify-content-center pt-4'>
-            <MDBCol md={6} className='gx-5 pb-2 text-center'>
-                <MDBTypography tag='div' className='display-6 pb-3 mb-3 border-bottom tracking-in-expand' style={{fontFamily: "'Cinzel', serif", letterSpacing: '0.5rem'}}>
-                    CONTACT
-                </MDBTypography>
-            </MDBCol>
-        </MDBRow>
+            <MDBRow className='justify-content-center pt-4'>
+                <MDBCol md={6} className='gx-5 pb-2 text-center'>
+                    <MDBTypography tag='div' className='display-6 pb-3 mb-3 border-bottom tracking-in-expand' style={{fontFamily: "'Cinzel', serif", letterSpacing: '0.5rem'}}>
+                        CONTACT
+                    </MDBTypography>
+                </MDBCol>
+            </MDBRow>
 
-        <MDBRow className='p-0 m-0 justify-content-center align-items-center text-center'>
-                <div className="d-flex text-center justify-content-center align-items-center">
-                    <div className='d-flex text-center justify-content-center align-items-center' style={{backgroundColor: '#bc9864', borderRadius: '50%', height: '4rem', width: '4rem'}}>
-                        <MDBIcon icon='envelope' far size='2x' color='black'/>
-                    </div>
-                </div>
-                <div className="text-center py-1">
-                    <h5>jasonywang0@gmail.com</h5>
-                </div>
+            <Fade>
+                <MDBRow className='p-0 m-0 justify-content-center align-items-center text-center'>
+                        <div className="d-flex text-center justify-content-center align-items-center">
+                            <div className='d-flex text-center justify-content-center align-items-center' style={{backgroundColor: '#bc9864', borderRadius: '50%', height: '4rem', width: '4rem'}}>
+                                <MDBIcon icon='envelope' far size='2x' color='black'/>
+                            </div>
+                        </div>
+                        <div className="text-center py-1">
+                            <h5>jasonywang0@gmail.com</h5>
+                        </div>
 
-        </MDBRow>        
+                </MDBRow>        
 
-        <MDBRow className='justify-content-center'>
-            
-            <div className="col-sm-9 col-md-8 col-lg-6 col-xl-5 col-xxl-4">
-                
-                <div className="row p-0 m-0">
-                    <div className='col-md-12'>
-                        {status && <StatusMessage status={status}/>}
-                    </div>
-                </div>
-                
-                <form id="contactForm" name="contactForm" className="contactForm" onSubmit={handleSubmit}>
-                    <div className="row p-0 m-0">
+                <MDBRow className='justify-content-center'>
                     
-                        <div className="col-md-12 my-2">
-                            <div className="form-group">
-                                <input type="text" className="form-control" name="name" id="name" placeholder="Name*" value={formValue.name} onChange={changeValue} required/>
+                    <div className="col-sm-9 col-md-8 col-lg-6 col-xl-5 col-xxl-4">
+                        
+                        <div className="row p-0 m-0">
+                            <div className='col-md-12'>
+                                {status && <StatusMessage status={status}/>}
                             </div>
                         </div>
+                        
+                        <form id="contactForm" name="contactForm" className="contactForm" onSubmit={handleSubmit}>
+                            <div className="row p-0 m-0">
+                            
+                                <div className="col-md-12 my-2">
+                                    <div className="form-group">
+                                        <input type="text" className="form-control" name="name" id="name" placeholder="Name*" value={formValue.name} onChange={changeValue} required/>
+                                    </div>
+                                </div>
 
-                        <div className="col-md-12 my-2">
-                            <div className="form-group">
-                                <input type="email" className="form-control" name="email" id="email" value={formValue.email} onChange={changeValue} placeholder="Email*"/>
-                            </div>
-                        </div>
+                                <div className="col-md-12 my-2">
+                                    <div className="form-group">
+                                        <input type="email" className="form-control" name="email" id="email" value={formValue.email} onChange={changeValue} placeholder="Email*"/>
+                                    </div>
+                                </div>
 
-                        <div className="col-md-12 my-2">
-                            <div className="form-group">
-                                <input type="text" className="form-control" name="subject" id="subject" value={formValue.subject} onChange={changeValue} placeholder="Subject*"/>
-                            </div>
-                        </div>
+                                <div className="col-md-12 my-2">
+                                    <div className="form-group">
+                                        <input type="text" className="form-control" name="subject" id="subject" value={formValue.subject} onChange={changeValue} placeholder="Subject*"/>
+                                    </div>
+                                </div>
 
-                        <div className="col-md-12 my-2">
-                            <div className="form-group">
-                                <textarea 
-                                    name="message" 
-                                    className="form-control error" 
-                                    id="message"
-                                    value={formValue.message} 
-                                    cols="25" 
-                                    rows="8" 
-                                    placeholder="Message*" 
-                                    aria-invalid="true" 
-                                    onChange={changeValue}
-                                ></textarea>
-                                {/* <label id="message-error" className="error" for="message">Please enter a message</label> */}
+                                <div className="col-md-12 my-2">
+                                    <div className="form-group">
+                                        <textarea 
+                                            name="message" 
+                                            className="form-control error" 
+                                            id="message"
+                                            value={formValue.message} 
+                                            cols="25" 
+                                            rows="8" 
+                                            placeholder="Message*" 
+                                            aria-invalid="true" 
+                                            onChange={changeValue}
+                                        ></textarea>
+                                        {/* <label id="message-error" className="error" for="message">Please enter a message</label> */}
+                                    </div>
+                                </div>
+                        
+                                <div className="col-md-12 my-2">
+                                    <div className="form-group">
+                                        <input id="submit-message" type="submit" value="Send Message" className="btn btn-primary"/>
+                                        <div className="submitting"></div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                
-                        <div className="col-md-12 my-2">
-                            <div className="form-group">
-                                <input id="submit-message" type="submit" value="Send Message" className="btn btn-primary"/>
-                                <div className="submitting"></div>
-                            </div>
-                        </div>
+                        </form>
+
                     </div>
-                </form>
+                </MDBRow>
 
-            </div>
-        </MDBRow>
+            </Fade>
 
-    </MDBContainer>
+        </MDBContainer>
   );
 }
