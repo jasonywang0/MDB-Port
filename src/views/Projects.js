@@ -13,13 +13,15 @@ export default function Projects() {
   return (
     <MDBContainer id='projects' fluid className='pt-5 text-white' style={{backgroundColor: '#191919'}}>
 
-        <MDBRow className='justify-content-center py-4'>
-            <MDBCol md={6} className='gx-5 pb-2 text-center'>
-                <MDBTypography tag='div' className='display-6 pb-3 mb-3 border-bottom tracking-in-expand' style={{fontFamily: "'Cinzel', serif", letterSpacing: '0.5rem'}}>
-                    Projects
-                </MDBTypography>
-            </MDBCol>
-        </MDBRow>
+        <Fade>
+            <MDBRow className='justify-content-center py-4'>
+                <MDBCol md={6} className='gx-5 pb-2 text-center'>
+                    <MDBTypography tag='div' className='display-6 pb-3 mb-3 border-bottom tracking-in-expand' style={{fontFamily: "'Cinzel', serif", letterSpacing: '0.5rem'}}>
+                        Projects
+                    </MDBTypography>
+                </MDBCol>
+            </MDBRow>
+        </Fade>
 
         <Fade>
             <MDBRow className='justify-content-center p-3'>

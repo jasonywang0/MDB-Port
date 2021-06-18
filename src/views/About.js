@@ -18,13 +18,15 @@ export default function About() {
   return (
     <MDBContainer id='about' fluid className='text-white align-items-center' style={{backgroundColor: '#191919', scrollMarginTop: '3.5rem'}}>
 
-        <MDBRow className='justify-content-center py-4'>
-            <MDBCol md={6} className='gx-5 pb-2'>
-                <MDBTypography tag='div' className='text-center display-6 pb-3 mb-3 border-bottom tracking-in-expand' style={{fontFamily: "'Cinzel', serif", letterSpacing: '0.5rem'}}>
-                    ABOUT
-                </MDBTypography>
-            </MDBCol>
-        </MDBRow>
+        <Fade>
+            <MDBRow className='justify-content-center py-4'>
+                <MDBCol md={6} className='gx-5 pb-2'>
+                    <MDBTypography tag='div' className='text-center display-6 pb-3 mb-3 border-bottom tracking-in-expand' style={{fontFamily: "'Cinzel', serif", letterSpacing: '0.5rem'}}>
+                        ABOUT
+                    </MDBTypography>
+                </MDBCol>
+            </MDBRow>
+        </Fade>
 
         <Fade>
             <MDBRow className='justify-content-center'>
@@ -49,12 +51,14 @@ export default function About() {
                 </MDBCol>
             </MDBRow>
         </Fade>
-
-        <MDBRow className='pt-2 justify-content-center'>
-            <MDBCol md={7} className='gx-5'>
-                <h3 className="text-center" style={{fontFamily: "'Cinzel', serif", letterSpacing: '0.5rem'}}>SKILLS & TOOLS</h3>
-            </MDBCol>
-        </MDBRow>
+        
+        <Fade>
+            <MDBRow className='pt-2 justify-content-center'>
+                <MDBCol md={7} className='gx-5'>
+                    <h3 className="text-center" style={{fontFamily: "'Cinzel', serif", letterSpacing: '0.5rem'}}>SKILLS & TOOLS</h3>
+                </MDBCol>
+            </MDBRow>
+        </Fade>
 
         <Fade>
             <MDBRow className='justify-content-center'>

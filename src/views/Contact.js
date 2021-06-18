@@ -72,13 +72,15 @@ export default function Contact() {
     
         <MDBContainer id='contact' fluid className='text-white py-5' style={{backgroundColor: '#191919'}}>
 
-            <MDBRow className='justify-content-center pt-4'>
-                <MDBCol md={6} className='gx-5 pb-2 text-center'>
-                    <MDBTypography tag='div' className='display-6 pb-3 mb-3 border-bottom tracking-in-expand' style={{fontFamily: "'Cinzel', serif", letterSpacing: '0.5rem'}}>
-                        CONTACT
-                    </MDBTypography>
-                </MDBCol>
-            </MDBRow>
+            <Fade>
+                <MDBRow className='justify-content-center pt-4'>
+                    <MDBCol md={6} className='gx-5 pb-2 text-center'>
+                        <MDBTypography tag='div' className='display-6 pb-3 mb-3 border-bottom tracking-in-expand' style={{fontFamily: "'Cinzel', serif", letterSpacing: '0.5rem'}}>
+                            CONTACT
+                        </MDBTypography>
+                    </MDBCol>
+                </MDBRow>
+            </Fade>
 
             <Fade>
                 <MDBRow className='p-0 m-0 justify-content-center align-items-center text-center'>
