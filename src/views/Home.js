@@ -1,5 +1,4 @@
 import React from 'react';
-// import ProgressiveImage from 'react-progressive-image';
 import {
 	MDBContainer,
 } from 'mdb-react-ui-kit';
