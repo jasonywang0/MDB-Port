@@ -12,6 +12,7 @@ function StatusMessage({status}) {
     let message = 'Something went wrong. Please try again later.';
     const style = { color: 'red', fontWeight: 500 };
 
+     // possible values are 'SENT' or 'ERROR or '9000'
     if (status === 'INCOMPLETE') {
         message = 'All Fields Are Required.'
     } else if (status === 'SENDING') {
@@ -20,7 +21,9 @@ function StatusMessage({status}) {
     } else if (status === 'SENT') {
         message = 'Message Sent!'
         style.color = 'green';
-    } 
+    } else if (status === '9000') {
+        message = 'Message Limit Exceeded!'
+    }
     
     return <div style={style}>{message}</div>
 }
@@ -33,6 +36,7 @@ export default function Contact() {
         email: '',
         subject: '',
         message: '',
+        yum: '',
     });
     
   const changeValue = (e) => setFormValue((prev) => ({ ...prev, [e.target.name]: e.target.value}))
@@ -41,16 +45,18 @@ export default function Contact() {
 
     try {
         e.preventDefault();
-        const { name, email, subject, message } = formValue;
+        const { name, email, subject, message, yum } = formValue;
+        if (yum) return; // honey
         if (!name || !email || !subject || !message) return setStatus('INCOMPLETE');
         
         const details = {
             name,
             email,
             subject,
-            message
+            message,
+            yum
         };
-        
+
         setStatus("SENDING");
         const response = await fetch("https://jasonywang0-contact.herokuapp.com/", {
           method: "POST",
@@ -59,7 +65,7 @@ export default function Contact() {
           },
           body: JSON.stringify(details),
         });
-        const result = await response.json(); // possible values are 'SENT' or 'ERROR'
+        const result = await response.json();
         if (result.status === 'SENT') setFormValue({name: '', email: '', subject: '', message: ''});
         setStatus(result.status);
     } catch(error) {
@@ -142,10 +148,12 @@ export default function Contact() {
                                         {/* <label id="message-error" className="error" for="message">Please enter a message</label> */}
                                     </div>
                                 </div>
+
+                                <input class="yum" autocomplete="off" type="text" name="yum" value={formValue.subject} onChange={changeValue} placeholder="Are you really human?"></input>
                         
                                 <div className="col-md-12 my-2">
                                     <div className="form-group">
-                                        <input id="submit-message" type="submit" value="Send Message" className="btn btn-primary"/>
+                                        <input id="submit-message" type="submit" value="Send Message" disabled={status === '9000'} className="btn btn-primary"/>
                                         <div className="submitting"></div>
                                     </div>
                                 </div>
