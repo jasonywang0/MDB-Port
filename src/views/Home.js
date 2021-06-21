@@ -2,8 +2,6 @@ import React from 'react';
 // import ProgressiveImage from 'react-progressive-image';
 import {
 	MDBContainer,
-    MDBRow,
-    MDBCol
 } from 'mdb-react-ui-kit';
 
 
