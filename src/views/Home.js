@@ -3,7 +3,6 @@ import {
 	MDBContainer,
 } from 'mdb-react-ui-kit';
 
-
 const useProgressiveImg = (lowQualitySrc, highQualitySrc) => {
   const [src, setSrc] = React.useState(lowQualitySrc);
   React.useEffect(() => {
@@ -17,18 +16,16 @@ const useProgressiveImg = (lowQualitySrc, highQualitySrc) => {
   return [src, { blur: src === lowQualitySrc }];
 };
 
-
 const BlurredUpImage = () => {
   const [src, { blur }] = useProgressiveImg("./purple-thumb.jpg", "./purple.jpg");
   return (
       <div
-        className='d-flex flex-column text-center align-items-center justify-content-center bg-image'      
+        className='d-flex flex-column text-center align-items-center justify-content-center bg-image h-100'      
         style={{
-        height: '100vh',
-          backgroundImage: `url(${src})`,
-          objectFit: 'contain',
-        filter: blur ? "blur(20px)" : "none",
-        transition: blur ? "none" : "filter 0.3s ease-out",
+            backgroundImage: `url(${src})`,
+            objectFit: 'contain',
+            filter: blur ? "blur(20px)" : "none",
+            transition: blur ? "none" : "filter 0.3s ease-out",
       }}>
         <div className='mask' style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}></div>
         <h1 id='greeting' className='mb-3'>Hello, World!</h1>
