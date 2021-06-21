@@ -116,7 +116,7 @@ export default function Contact() {
                             
                                 <div className="col-md-12 my-2">
                                     <div className="form-group">
-                                        <input type="text" className="form-control" name="name" id="name" placeholder="Name*" value={formValue.name} onChange={changeValue} required/>
+                                        <input type="text" className="form-control" name="name" id="name" placeholder="Name*" value={formValue.name} onChange={changeValue}/>
                                     </div>
                                 </div>
 
@@ -149,7 +149,7 @@ export default function Contact() {
                                     </div>
                                 </div>
 
-                                <input class="yum" autocomplete="off" type="text" name="yum" value={formValue.subject} onChange={changeValue} placeholder="Are you really human?"></input>
+                                <input className="yum" autoComplete="off" type="text" name="yum" value={formValue.subject} onChange={changeValue} placeholder="Are you really human?"></input>
                         
                                 <div className="col-md-12 my-2">
                                     <div className="form-group">
